@@ -1,0 +1,29 @@
+@import "./../../../styles.scss";
+
+
+:host {
+    --cv-background-color: var(--palette-color-secondary);
+    --cv-progress-bar-color: var(--palette-color-primary);
+    --cv-label-font-size: var(--font-size-xs);
+    --cv-label-margin-bottom: var(--padding-small);
+}
+
+.cv-range {
+
+    &__label {
+        font-size: var(--cv-label-font-size);
+        margin-bottom: var(--cv-label-margin-bottom);
+    }
+    
+    &__progress {
+        background-color: var(--cv-background-color);
+        height: 16px;
+        width: 100%;
+
+        &-bar {
+            background: var(--cv-progress-bar-color);
+            transition-delay: 0.8s;
+            height: 16px;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+<div class="home">
+
+    <ng-container *ngIf="isDesktop">
+        es desktop
+        <div class="home__column">
+            <div class="home__greeting"></div>
+            <div class="home__categories"></div>
+        </div>
+        <div class="home__column">
+            <div class="home__introduction"></div>
+            <div class="home__skils-range"></div>
+        </div>
+        <div class="home__column">
+            <div class="home__image"></div>
+        </div>
+    </ng-container>
+
+    <ng-container *ngIf="!isDesktop">
+        es mobile
+        <div class="home__row">
+            <div class="home__greeting"></div>
+            <div class="home__image"></div>
+        </div>
+        <div class="home__categories-tab"></div>
+        <div class="home__introduction"></div>
+        <div class="home__skils-range"></div>
+    </ng-container>
+
+</div>

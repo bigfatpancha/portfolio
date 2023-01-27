@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+
+  --yellow-color-100: #F5F1AE;
+
+  --blue-color-100: #BAC5F5;
+
+  --gray--color-100: #888EA8;
+
+  --pink-color-100: #ECA2F5;
+  --pink-color-200: #A267A8;
+
+  --palette-color-primary: var(--yellow-color-100);
+  --palette-color-secondary: var(--gray--color-100);
+  --palette-color-tertiary: var(--blue-color-100);
+
+
+  --font-size-5xl: 3.75rem; //60px
+  --font-size-4xl: 3rem; //48px
+  --font-size-3-5xl: 2.5rem; //40px
+  --font-size-3xl: 2rem; //32px
+  --font-size-2xl: 1.5rem; //24px
+  --font-size-xl: 1.25rem; //20px
+  --font-size-lg: 1.125rem; //18px
+  --font-size-md: 1rem; //16px root
+  --font-size-sm: 0.875rem; //14px
+  --font-size-xs: 0.75rem; //12px
+  --font-size-1xs: 0.625rem; //10px
+  --font-size-2xs: 0.5rem; //8px
+
+  --font-size-root: var(--font-size-md);
+
+
+  --padding-none: 0;
+  --padding-small: 8px;
+  --padding-xbase: 12px;
+  --padding-base: 16px;
+  --padding-medium: 24px;
+  --padding-large: 32px;
+
+}
