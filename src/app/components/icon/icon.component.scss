@@ -1,0 +1,61 @@
+/*
+Component icon
+@zt-icon
+*/
+
+@import "../../../styles.scss";
+
+:host {
+  --icon-font-size-xlarge: 30px;
+  --icon-font-size-large: var(--font-size-3xl); //32px
+  --icon-font-size-base: var(--font-size-2xl); //24px
+  --icon-font-size-small: var(--font-size-xl); // 20px
+  --icon-font-size-xsmall: var(--font-size-md); // 16px
+  --icon-font-size-xxsmall: var(--font-size-xs); // 12px
+  --icon-padding: 4px;
+  --icon-padding-small: 2px;
+  
+
+  --icon-font-color: var(--palette-color-secondary);
+  --icon-font-color-blue: var(--blue-color-100);
+  --icon-font-color-pink: var(--pink-color-100);
+  --icon-font-color-yellow: var(--yellow-color-100);
+
+}
+
+.cv-icon {
+  color: var(--icon-font-color);
+  display: flex;
+
+  &--yellow {
+    color: var(--yellow-color-100);
+  }
+  &--pink {
+    color: var(--pink-color-100);
+  }
+  &--blue {
+    color: var(--blue-color-100);
+  }
+
+  &--xlarge {
+    font-size: var(--icon-font-size-xlarge);
+  }
+
+  &--base {
+    font-size: var(--icon-font-size-base);
+  }
+
+  &--small {
+    padding: var(--icon-padding-small);
+    font-size: var(--icon-font-size-small);
+  }
+
+  &--xsmall {
+    font-size: var(--icon-font-size-xsmall);
+  }
+
+  &--xxsmall {
+    font-size: var(--icon-font-size-xxsmall);
+  }
+
+}

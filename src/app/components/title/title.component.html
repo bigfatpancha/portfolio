@@ -1,0 +1,54 @@
+<div [ngSwitch]="_size" class="{{ _align }}">
+  <h1
+    *ngSwitchCase="'cv-title--xxlarge'"
+    class="cv-title {{ _size }} {{ _weight }}"
+  >
+    <ng-container *ngTemplateOutlet="content"></ng-container>
+  </h1>
+  <h2
+    *ngSwitchCase="'cv-title--xlarge'"
+    class="cv-title {{ _size }} {{ _weight }}"
+  >
+    <ng-container *ngTemplateOutlet="content"></ng-container>
+  </h2>
+  <h3
+    *ngSwitchCase="'cv-title--large'"
+    class="cv-title {{ _size }} {{ _weight }}"
+  >
+    <ng-container *ngTemplateOutlet="content"></ng-container>
+  </h3>
+  <h4
+    *ngSwitchCase="'cv-title--medium'"
+    class="cv-title {{ _size }} {{ _weight }}"
+  >
+    <ng-container *ngTemplateOutlet="content"></ng-container>
+  </h4>
+  <h4
+    *ngSwitchCase="'cv-title--xxmedium'"
+    class="cv-title {{ _size }} {{ _weight }}"
+  >
+    <ng-container *ngTemplateOutlet="content"></ng-container>
+  </h4>
+  <h4
+    *ngSwitchCase="'cv-title--xmedium'"
+    class="cv-title {{ _size }} {{ _weight }}"
+  >
+    <ng-container *ngTemplateOutlet="content"></ng-container>
+  </h4>
+  <h5
+    *ngSwitchCase="'cv-title--small'"
+    class="cv-title {{ _size }} {{ _weight }}"
+  >
+    <ng-container *ngTemplateOutlet="content"></ng-container>
+  </h5>
+  <h6
+    *ngSwitchCase="'cv-title--xsmall'"
+    class="cv-title {{ _size }} {{ _weight }}"
+  >
+    <ng-container *ngTemplateOutlet="content"></ng-container>
+  </h6>
+</div>
+
+<ng-template #content>
+  <ng-content></ng-content>
+</ng-template>

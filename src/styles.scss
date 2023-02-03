@@ -68,4 +68,15 @@
 
   --family-root: var(--family-font);
 
+  /*-- Spacers --*/
+  --spacer-none: 0;
+  --spacer-xs: 0.25rem; //4px
+  --spacer-sm: 0.5rem; //8px
+  --spacer-md: 1rem; //16px
+  --spacer-lg: 1.5rem; //24px
+  --spacer-xl: 2rem; //32px
+  --spacer-2xl: 2.5rem; //40px
+  --spacer-3xl: 3rem; //48px
+  --spacer-4xl: 4rem; //64px
+
 }

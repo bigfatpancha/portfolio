@@ -1,0 +1,108 @@
+@import "./../../../styles.scss";
+
+:host {
+  --divider-light: var(--yellow-color-100);
+  --divider-dark: var(--gray--color-100);
+  --divider-solid-height: 2px;
+  --divider-gradient-height: 4px;
+  --divider-full-width: 100%;
+  --divider-semi-full-width: 75%;
+  --divider-medium-width: 50%;
+  --divider-margin-top: var(--spacer-lg);
+  --divider-margin-bottom: var(--spacer-xl);
+  --divider-margin-left-none: 0;
+  --divider-margin-right-none: 0;
+}
+
+.cv-divider {
+  border: 0;
+  margin-top: var(--divider-margin-top);
+  margin-bottom: var(--divider-margin-bottom);
+
+  // TYPE
+  &--solid-light {
+    height: var(--divider-solid-height);
+    background: var(--divider-light);
+  }
+  &--solid-dark {
+    height: var(--divider-solid-height);
+    background: var(--divider-dark);
+  }
+
+  //ALIGN
+  &--center {
+    text-align: center;
+
+    &.cv-divider--gradient-light {
+      height: var(--divider-gradient-height);
+      background: linear-gradient(
+        to right,
+        transparent,
+        var(--divider-light),
+        transparent
+      );
+    }
+    &.cv-divider--gradient-dark {
+      height: var(--divider-gradient-height);
+      background: linear-gradient(
+        to right,
+        transparent,
+        var(--divider-dark),
+        transparent
+      );
+    }
+  }
+
+  &--left {
+    text-align: left;
+    margin-left: var(--divider-margin-left-none);
+
+    &.cv-divider--gradient-light {
+      height: var(--divider-gradient-height);
+      background: linear-gradient(
+        to left,
+        transparent,
+        var(--divider-light)
+      );
+    }
+    &.cv-divider--gradient-dark {
+      height: var(--divider-gradient-height);
+      background: linear-gradient(to left, transparent, var(--divider-dark));
+    }
+  }
+
+  &--right {
+    text-align: right;
+    margin-right: var(--divider-margin-right-none);
+
+    &.cv-divider--gradient-light {
+      height: var(--divider-gradient-height);
+      background: linear-gradient(
+        to right,
+        transparent,
+        var(--divider-light)
+      );
+    }
+    &.cv-divider--gradient-dark {
+      height: var(--divider-gradient-height);
+      background: linear-gradient(
+        to right,
+        transparent,
+        var(--divider-dark)
+      );
+    }
+  }
+
+  //SIZE
+  &--full {
+    width: var(--divider-full-width);
+  }
+
+  &--semi-full {
+    width: var(--divider-semi-full-width);
+  }
+
+  &--medium {
+    width: var(--divider-medium-width);
+  }
+}
