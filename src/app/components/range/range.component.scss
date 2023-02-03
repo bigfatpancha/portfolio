@@ -4,6 +4,7 @@
 :host {
     --cv-background-color: var(--palette-color-secondary);
     --cv-progress-bar-color: var(--palette-color-primary);
+    --cv-progress-label-color: var(--palette-color-secondary);
     --cv-label-font-size: var(--font-size-xs);
     --cv-label-margin-bottom: var(--padding-small);
 }
@@ -13,6 +14,7 @@
     &__label {
         font-size: var(--cv-label-font-size);
         margin-bottom: var(--cv-label-margin-bottom);
+        color: var(--cv-progress-label-color);
     }
     
     &__progress {

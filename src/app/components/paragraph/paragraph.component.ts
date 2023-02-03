@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 const sizes = {
-  xsmall: ['cv-paragraph--xsmall'],
   small: ['cv-paragraph--small'],
   medium: ['cv-paragraph--medium'],
   large: ['cv-paragraph--large'],

@@ -1,3 +1,5 @@
+@import "reboot";
+
 /* You can add global styles to this file, and also import other style files */
 :root {
   --white-color: #fff;
@@ -32,6 +34,28 @@
 
   --font-size-root: var(--font-size-md);
 
+  
+  /*-- font-weight --*/
+  --font-weight-medium: 500;
+  --font-weight-bold: bold;
+
+  --font-style-normal: normal;
+  --font-style-italic: italic;
+
+  --font-weight-root: var(--font-weight-medium);
+
+  /*-- letter spacing --*/
+  --font-letter-spacing-4xl: 1.92px;
+  --font-letter-spacing-3xl: 1.02px;
+  --font-letter-spacing-2xl: 0.77px;
+  --font-letter-spacing-xl: 0.64px;
+  --font-letter-spacing-lg: 0.58px;
+  --font-letter-spacing-md: 0.51px;
+  --font-letter-spacing-sm: 0.45px;
+  --font-letter-spacing-xs: 0.4px;
+  --font-letter-spacing-1xs: 0.32px;
+  --font-letter-spacing-2xs: 0;
+
 
   --padding-none: 0;
   --padding-small: 8px;
@@ -39,5 +63,9 @@
   --padding-base: 16px;
   --padding-medium: 24px;
   --padding-large: 32px;
+
+  --family-font: 'Roboto', sans-serif;
+
+  --family-root: var(--family-font);
 
 }
